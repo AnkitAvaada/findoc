@@ -1,7 +1,7 @@
 import requests
 
-webhook_url_test = "http://localhost:5678/webhook-test/my-webhook"
-webhook_url = "http://localhost:5678/webhook/my-webhook"
+webhook_url_test = "https://n8ntest1416.app.n8n.cloud/webhook-test/my-webhook"
+webhook_url = "https://n8ntest1416.app.n8n.cloud/webhook/my-webhook"
 
 def ai_agent(user_input, url=webhook_url):
     if user_input.lower() == "bye":
@@ -15,4 +15,5 @@ def ai_agent(user_input, url=webhook_url):
     return response.text
 
 if __name__ == "__main__":
+
     print(ai_agent("Hello"))
